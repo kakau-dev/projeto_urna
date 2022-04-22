@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="urna.css">
+       <title>Document</title>
+</head>
+<body>
+   <div class="container">
+       <div class="box-urna">
+            <div class="screen">
+               <div class="content">
+                  <div class="painel">   
+                  <div id="p">Voto  vai  para</div>
+                  <h1 class="sei-la">Vereador</h1> 
+                  <div class="box-do-input"> 
+                  <div style="width:50px;height:34px;padding:7px 0px 0px 0px;margin-right:10px;color:#dcdcdc;" id="number">Número</div>
+                  <div class="box-input">  
+                  <div class="ent" id="v1"></div>
+                  <div class="ent" id="v2"></div>
+                  <div class="ent" id="v3"></div>
+                  <div class="ent" id="v4"></div>
+                  <div class="ent" id="v5"></div> 
+                  </div> 
+                  </div>
+                  <div id="lable"style="display:flex;margin-top:10px;color:#dcdcdc;">Nome:<div id="nome_candidato" style="margin-left:16px;">kakau</div></div>
+                  <div id="pp"style="margin-top:35px;">Partido:<div id="name-part"></div></div>
+                  <div id="name_vice" style="display:none;">Vice-Prefeito:<div style="margin-left:10px;">kakau</div></div>
+            </div>
+         <div class="image">
+             <div id="teste">
+                <img id="image-vereador" style="display:none;border-left:1px inset gray;border-bottom:wpx inset gray" src="" alt="" height="150" width="145">
+                <p id="label-prefeito">prefeito</p>
+                <img id="vice"src="judo.png" alt="" height="105" width="105">
+                <p id="label-vice">vice-prefeito</p>
+             </div>
+              <p id="nulo1" class="voto-errado">NÚMERO ERRADO</p>
+              <p id="nulo" class="voto_nulo">voto nulo</p>
+          </div>
+      </div>  
+                  <div class="description"><div style="font-size:14px;font-weight:bold;">Aperte a tecla:</div>
+                  <div style="display:flex;"><div style="font-size:13px;font-family:arial;margin:0px 10px 0px 25px;font-weight:bold;">VERDE</div><div style="font-size:15px;font-family:ariel;font-weight:bold;">Para confirmar voto</div></div>
+                  <div style="display:flex;"><div style="font-size:13px;font-family:arial;margin:0px 10px 0px 25px;font-weight:bold;">VERMELHO</div><div style="font-size:15px;font-family:ariel;font-weight:bold;">Para corrigir voto</div></div>
+           </div>
+           </div>
+                 <div class="keyboard-numeric">
+                 <div class="box-for-key">
+                 <button class="key" id="1">1</button>
+                 <button class="key" id="2">2</button>
+                 <button class="key" id="3">3</button>
+                 <button class="key" id="4">4</button>
+                 <button class="key" id="5">5</button>
+                 <button class="key" id="6">6</button>
+                 <button class="key" id="7">7</button>
+                 <button class="key" id="8">8</button>
+                 <button class="key" id="9">9</button>
+                 <button class="key" id="0">0</button>
+          </div>  
+          <div class="caixa">
+                <button class="button-branco"><p style="margin:0px 0px 30px 0px;">BRANCO</p></button>
+                <button class="button-vermelho" onclick="corrigir()"> <p style="margin:0px 0px 30px 0px;">CORRIGE</p></button>
+                <button class="button-verde"onclick=" if(voto_validado){prefeito()}"><p style="line-height:11px;">CONFIRMAR</p></button>
+         </div>
+         </div>
+         </div>     
+
+  <script src="urna.js"></script>     
+</body>
+</html>

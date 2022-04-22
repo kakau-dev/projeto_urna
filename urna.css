@@ -1,0 +1,225 @@
+body{
+  margin:0;
+  padding:0;
+}
+.container{
+  display:flex;
+  height:100vh;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  
+}
+.box-urna{
+    display:flex;
+    width: 850px;
+    height:400px;
+    background-color:#ffffcd;   
+    border:3px inset black;
+}
+.screen{
+   max-width:500px;
+   max-height:325px;
+   width:500px;
+   height:325px;
+   background-color:#dcdcdc;
+   margin-left:25px;
+   margin-top:25px;
+   border:3px inset black;
+}
+.keyboard-numeric{
+   display:flex;
+   flex-direction:column;
+   background-color:#292727;
+   justify-content:center;
+   align-items:center;
+   width:300px;
+   height:300px;
+   margin-left:25px;
+   margin-top:25px;
+   margin-right:25px;
+   padding:4px;
+
+}
+.key{
+   width:70px;
+   height:50px;
+   background-color:black;
+   margin:4px;    
+   text-align:left;
+   color:white;
+   font-size:25px;
+
+}
+.box-for-key{
+    width:250px; 
+    height:230px;  
+    text-align:center;
+}
+.caixa{
+    display:flex;
+    justify-content:space-around;
+    width:270px;
+    height:50px;     
+  
+}
+.button-branco{
+    width:80px;
+    height:35px;
+    border:1px ridge black;
+    border-radius:5px;
+    font-size:13px;
+    margin-top:15px;
+    padding:2px;     
+}
+.button-vermelho{
+    width:80px;
+    height:35px;
+    background:#b22222;
+    border:1px ridge black;
+    border-radius:5px;
+    font-size:13px;
+    margin-top:15px;
+    padding:2px;
+    text-align:center;
+}
+.button-verde{
+    width:82px;
+    height:45px;
+    margin-top:5px;
+    border:1px ridge black;
+    border-radius:5px;
+    background-color:green;
+    font-family:arial;
+    margin-top:5px;
+    font-size:13px;
+    padding:1px;
+}
+.painel{
+  width:250px;
+  height:240px;
+}
+.sei-la{
+   margin:30px 0px 40px 80px;
+   font-size:22px;
+   font-family:arial;
+
+}
+.ent{
+  width: 25px;
+  height:30px;
+  border:1px inset black;
+  margin:1px;
+  padding:1px;
+  background:white;
+  text-align:center;
+  font-family:arial,sans-serif;
+  font-size:25px;
+}
+.box-input{
+  display:flex;
+  width:230x;
+  height:27px; 
+}
+#p{
+  margin:4px 0px 0px 0px;
+  font-size:16px;
+  width:230px;
+  color:#dcdcdc;
+  font-family:arial;
+  font-weight:bold;
+}
+.box-do-input{
+  display:flex;
+  width:300px;
+}
+
+.content{
+  display:flex;
+  flex-direction:row;
+  height:270px;
+}
+.image{
+   text-align:right;
+   width:230px;
+}
+#name-part{
+  margin-left:10px;
+}
+.description{
+  border-top:2px solid black;
+  display:none;
+}
+#pp{
+  display:none;
+}
+.voto_nulo{
+  position:relative;
+  max-width:230px;
+  width:230px;
+  top:-110px;
+  left:-150px;
+  font-size:45px;
+  margin:0px;
+  font-family:Helvetica;
+  animation:light 2s infinite;
+  
+  display:none;
+}
+.voto-errado{
+  display:none;
+  position:relative;
+  max-width:230px;
+  width:230px;
+  top:-100px;
+  right:280px;
+  margin-left:1px;
+  font-size:20px;
+}
+#label-prefeito{
+  width:142px;
+  margin:0px;
+  font-size:20px;
+  height:22px;
+  padding:2px;
+  font-weight:bold;
+  text-align:center;
+  background:white;
+  border-left:1px inset gray;
+  border-bottom:1px inset gray;
+}
+#teste{
+  width:150px;
+  height:250px;
+  padding-left:83px;
+  display:flex;
+  flex-direction:column;
+}
+#vice{
+  margin:2px 1px 0px 41px;
+  border-left:1px inset gray;
+  border-top:1px inset gray;
+}
+#label-vice{
+  margin:0px; 
+  margin-left:41px;
+  text-align:center;
+  background:white;
+  width:101px; 
+  border-left:1px inset gray;
+  font-size:16px;
+  padding:2px;
+  border-bottom:1px inset gray;
+}
+#name_vice{
+  display:none;
+}
+
+@keyframes light {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:95;
+  }
+}
